@@ -1,84 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Haridra</title>
-  <style>
-    body {
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 0;
-    }
-    
-    header {
-      background-color: #ffffff;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .frame {
-      display: flex;
-      height: calc(100vh - 40px);
-    }
-    
-    .menu {
-      float: left;
-      width: 200px;
-      background-color: #f2f2f2;
-      padding: 20px;
-    }
-    
-    .menu ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    
-    .menu li {
-      margin-bottom: 10px;
-    }
-    
-    .content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: calc(100vh - 160px);
-    }
-    
-    .footer {
-      background-color: #f2f2f2;
-      padding: 10px;
-      text-align: center;
-      font-size: 12px;
-    }
-    
-    .footer a {
-      color: #000000;
-      text-decoration: none;
-    }
-  </style>
+    <title>Haridra</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(fundo.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        #title {
+            font-family: 'Arial', sans-serif;
+            font-size: 48px;
+            text-align: center;
+            color: #fff;
+            margin-top: 200px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Haridra</h1>
-  </header>
-  
-  <div class="frame">
-    <div class="menu">
-      <ul>
-        <li><a href="Yoga.php">Yoga</a></li>
-        <li><a href="Massoterapia.php">Massoterapia</a></li>
-        <li><a href="Quick_Massage.php">Quick Massage</a></li>
-        <li><a href="Abhyanga.php">Abhyanga</a></li>
-        <li><a href="Plano_Ayurveda.php">Plano Ayurveda</a></li>
-      </ul>
+    <h1 id="title">Haridra</h1>
+    <div id="frame">
+        <iframe id="menu-frame" src="menu.html" frameborder="0"></iframe>
     </div>
-    
-    <div class="content">
-      <iframe src="menu.html" style="width: 100%; height: 100%; border: none;"></iframe>
-    </div>
-  </div>
-  
-  <div class="footer">
-    <p>@May.Mukti @Haridra</p>
-  </div>
 </body>
 </html>

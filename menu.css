@@ -1,15 +1,28 @@
-window.onload = function() {
-    var links = document.getElementsByTagName('a');
+body {
+    margin: 0;
+    padding: 0;
+}
 
-    for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener('click', function() {
-            var current = document.getElementsByClassName('active');
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
-            if (current.length > 0) {
-                current[0].className = current[0].className.replace(' active', '');
-            }
+li {
+    margin-bottom: 10px;
+}
 
-            this.className += ' active';
-        });
-    }
-};
+a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #ccc;
+}
